@@ -1,8 +1,11 @@
+import React from 'react';
+import Header from './components/Layout/Header';
+
 function App() {
   return (
-    <div>
-      <h1>mlo Delicacies</h1>
-    </div>
+    <React.Fragment>
+      <Header />
+    </React.Fragment>
   );
 }
 
