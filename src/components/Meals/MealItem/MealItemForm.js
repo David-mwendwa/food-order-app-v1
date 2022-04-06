@@ -19,7 +19,7 @@ const MealItemForm = (props) => {
       return;
     }
 
-    props.onAddToCart(enteredAmountNumber)
+    props.onAddToCart(enteredAmountNumber);
   };
 
   return (
@@ -36,7 +36,7 @@ const MealItemForm = (props) => {
           defaultValue: '1',
         }}
       />
-      <button>+ Add</button>
+      <button onClick={submitHandler}>+ Add</button>
       {!amountIsValid && <p>Please enter a valid amount (1-5)</p>}
     </form>
   );
